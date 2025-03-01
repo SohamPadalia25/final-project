@@ -1,0 +1,43 @@
+.tutorials-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--dark-blue),
+    var(--mid-blue),
+    var(--teal)
+  );
+}
+
+.tutorials-heading {
+  font-size: 54px;
+  margin-left: 100px;
+  padding-top: 50px;
+  color: var(--text-light);
+  font-family: "Raleway", sans-serif;
+}
+
+.tutorials-content {
+  color: var(--text-light);
+  font-size: 18px;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 4px;
+}
+
+.tutorials-content-container {
+  width: 70%;
+}
+
+/* Color palette */
+:root {
+  --dark-blue: #0a0a43; /* Deep navy blue */
+  --mid-blue: #102a53; /* Medium deep blue */
+  --teal: #2c5754; /* Deep teal */
+  --light-teal: #3a7a76; /* Lighter teal variant */
+  --text-light: #ffffff; /* White text */
+  --text-dark: #0a0a43; /* Dark text (same as dark blue) */
+  --accent-color: #ffd700; /* Gold accent */
+  --card-bg: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  --card-hover: rgba(255, 255, 255, 0.15); /* Slightly more opaque white */
+}

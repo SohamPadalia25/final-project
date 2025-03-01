@@ -1,0 +1,88 @@
+.yoga-container {
+  background: linear-gradient(
+    to bottom,
+    var(--dark-blue),
+    var(--mid-blue),
+    var(--teal)
+  );
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.secondary-btn {
+  position: relative;
+  left: 45%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: rgba(125, 125, 125, 0.1);
+  border-width: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  color: var(--text-light);
+}
+
+.secondary-btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.starting-contdown {
+  margin: auto;
+  border: 10px solid rgba(125, 125, 125, 0.5);
+  width: max-content;
+  padding: 10px 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  top: 45%;
+}
+
+.starting-contdown h1 {
+  color: var(--text-light);
+}
+
+.pose-img {
+  position: absolute;
+  right: 120px;
+  top: 80px;
+  width: 500px;
+  aspect-ratio: 1;
+}
+
+.performance-container {
+  display: flex;
+  padding: 20px;
+  position: absolute;
+  left: 150px;
+}
+
+.pose-performance {
+  margin: 10px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.pose-performance h4 {
+  color: var(--text-light);
+}
+
+#webcam {
+  transform: rotateY(180deg);
+}
+
+#my-canvas {
+  transform: rotateY(180deg);
+}
+
+/* Color palette */
+:root {
+  --dark-blue: #0a0a43; /* Deep navy blue */
+  --mid-blue: #102a53; /* Medium deep blue */
+  --teal: #2c5754; /* Deep teal */
+  --light-teal: #3a7a76; /* Lighter teal variant */
+  --text-light: #ffffff; /* White text */
+  --text-dark: #0a0a43; /* Dark text (same as dark blue) */
+  --accent-color: #ffd700; /* Gold accent */
+  --card-bg: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  --card-hover: rgba(255, 255, 255, 0.15); /* Slightly more opaque white */
+}
