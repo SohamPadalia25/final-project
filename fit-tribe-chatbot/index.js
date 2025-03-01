@@ -43,7 +43,7 @@ const {
   
     // Display initial response
     const initialResponse = await chatSession.sendMessage("Hello");
-    console.log("\nFit Tribe: " + initialResponse.response.text());
+    console.log("\nWellness360: " + initialResponse.response.text());
     
     // Start the conversation loop
     askQuestion(chatSession);
@@ -52,20 +52,20 @@ const {
   function askQuestion(chatSession) {
     rl.question("\nYou: ", async (input) => {
       if (input.toLowerCase() === 'exit' || input.toLowerCase() === 'quit') {
-        console.log("Fit Tribe: Thank you for using Fit Tribe! Stay healthy!");
+        console.log("Wellness360: Thank you for using Fit Tribe! Stay healthy!");
         rl.close();
         return;
       }
       
       try {
         const result = await chatSession.sendMessage(input);
-        console.log("\nFit Tribe: " + result.response.text());
+        console.log("\nWellness360: " + result.response.text());
         
         // Continue the conversation
         askQuestion(chatSession);
       } catch (error) {
         console.error("Error:", error);
-        console.log("\nFit Tribe: I'm sorry, I encountered an error. Please try again.");
+        console.log("\nWellness360: I'm sorry, I encountered an error. Please try again.");
         askQuestion(chatSession);
       }
     });
